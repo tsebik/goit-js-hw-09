@@ -1,20 +1,18 @@
 const startRef = document.querySelector('button[data-start]');
 const stopRef = document.querySelector('button[data-stop]');
-const bodyRef = document.querySelector('body');
-console.log(bodyRef);
+const bodyRef = document.body;
 
 startRef.addEventListener('click', onStartClick);
 stopRef.addEventListener('click', onStopClick);
-bodyRef.addEventListener('click', onChangeBodyOnClick);
 
 let intervalId = null;
 
-function onChangeBodyOnClick() {
+function changeColorBody() {
   bodyRef.style.backgroundColor = getRandomHexColor();
 }
 
 function onStartClick() {
-  intervalId = setInterval(onChangeBodyOnClick, 1000);
+  intervalId = setInterval(changeColorBody, 1000);
   startRef.disabled = true;
 }
 
