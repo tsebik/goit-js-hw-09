@@ -16,3 +16,27 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+
+.field {
+  display: inline-block;
+}
+
+.value {
+  display: inline-block;
+
+  font-size: 40px;
+  margin: 0px 10px;
+}
+
+.label {
+  display: block;
+  margin-left: 10px;
+
+  font-size: 16px;
+}
+
+#datetime-picker {
+  margin-left: 10px;
+}
