@@ -14,7 +14,7 @@ function onChangeBodyOnClick() {
 }
 
 function onStartClick() {
-  console.log((intervalId = setInterval(onChangeBodyOnClick, 1000)));
+  intervalId = setInterval(onChangeBodyOnClick, 1000);
   startRef.disabled = true;
 }
 
